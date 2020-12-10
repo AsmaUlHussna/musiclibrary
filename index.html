@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Music</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="homejs.js"></script> 
+  
+  
+ </head>
+
+<body>
+<div class="bgcentre">
+
+<script type="text/javascript">
+	  
+	  var image1 = new Image ()
+	  image1.src = "image1.jpg"
+	  
+	  var image2 = new Image ()
+	  image2.src = "image2.jpg"
+	  
+	  var image3 = new Image ()
+	  image3.src = "image3.jpg"
+	  
+	  var image4 = new Image ()
+	  image4.src = "image4.jpg"
+	  
+	  
+	  
+	  
+	  
+</script>
+
+
+
+<div class="htext01">MUSIC </div>
+<br>
+<div class="login"><a href="login.php"  style="color: #0277bd; text-decoration: none; float: right; padding-left: 10px; font-family:Arial; font-size:15px; font-weight:bold;">Login </a> </div> 
+<div class="signup"><a href="signup.php" style="color: #0277bd; text-decoration: none;float: right; font-family:Arial; font-size:15px; font-weight:bold;">Sign Up</a> </div>
+
+<br>
+<br>
+	     
+<div class="scrollmenu">
+  <a href="#home">Home</a>
+  <a href="#news">Playlist</a>
+  <a href="#contact">Artists</a>
+  <a href="#about">Albums</a>
+  
+  
+</div>  
+<br>
+<br>
+
+<img src="image1.jpg" name="slide" class ="slideshow">
+		<script type="text/javascript" >
+		var imgNumber = 1
+		function myslide(){
+		document.images.slide.src = eval("image"+imgNumber+".src")
+		if (imgNumber <4)
+		imgNumber = imgNumber + 1
+		else
+		imgNumber = 1
+		setTimeout("myslide()",2500)
+		}
+		myslide()
+		
+		</script>
+
+
+</div>
+</body>
+</html>

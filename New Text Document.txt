@@ -1,0 +1,18 @@
+create table tbl_album(
+    album_id int(5) not null auto_increment,
+    album_name varchar(50)  not null,
+    album_artist varchar(50) not null,
+    album_genre varchar(50),
+    album_year varchar(4),
+    primary key(album_id)
+);
+
+create table tbl_tracks(
+    track_id int(5) not null auto_increment,
+    track_number int(2),
+    track_name varchar(50) not null,
+    album_id int(5),
+    track_url varchar(100) not null,
+    primary key(track_id),
+    foreign key (album_id) references tbl_album(album_id)
+);
